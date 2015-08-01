@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19155,7 +19155,7 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <gate name="MCP2551" symbol="MCP2551" x="-2.54" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="SOIC8" package="SO08">
 <connects>
 <connect gate="MCP2551" pin="CANH" pad="7"/>
 <connect gate="MCP2551" pin="CANL" pad="6"/>
@@ -19170,6 +19170,21 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <technology name="">
 <attribute name="PROD_ID" value="IC-09907" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="DIP8" package="DIP08">
+<connects>
+<connect gate="MCP2551" pin="CANH" pad="7"/>
+<connect gate="MCP2551" pin="CANL" pad="6"/>
+<connect gate="MCP2551" pin="RS" pad="8"/>
+<connect gate="MCP2551" pin="RXD" pad="4"/>
+<connect gate="MCP2551" pin="TXD" pad="1"/>
+<connect gate="MCP2551" pin="VDD" pad="3"/>
+<connect gate="MCP2551" pin="VREF" pad="5"/>
+<connect gate="MCP2551" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
